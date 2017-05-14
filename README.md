@@ -1,6 +1,6 @@
 # mysettings
 
-## git config
+## git
 
 ### basic
 
@@ -17,13 +17,17 @@ git config --global alias.st status
 git config --global alias.logg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 git config --global alias.logga "log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 ```
+### vim
 
-## vimrc
+### vimrc
 
 ```bash:.vimrc
 syntax on
 filetype indent on
 set showmatch
+
+" set to ignore whitespace when diff files
+set diffopt+=iwhite
 
 " size of a hard tabstop
 set tabstop=4
